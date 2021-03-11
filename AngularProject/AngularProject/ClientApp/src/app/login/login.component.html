@@ -1,0 +1,15 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+  <div>
+    <h1>Login</h1>
+    <div *ngIf="invalidLogin" class="alert alert-danger">Invalid user credentials</div>
+  </div>
+  <br />
+  <label for="userName">User name</label>
+  <input type="text" id="userName" name="userName" ngModel class="form-control" required autofocus autocomplete="on"/>
+  <br />
+  <label for="password">Password</label>
+  <input type="text" id="password" name="password" ngModel class="form-control" required />
+
+  <button class="btn btn-lg btn-primary btn-block">Login in</button>
+  <br />
+</form>
