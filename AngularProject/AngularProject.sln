@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularProject", "AngularProject\AngularProject.csproj", "{88E74142-9765-4E2C-B9FE-3005B26A1806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularProject", "AngularProject\AngularProject.csproj", "{88E74142-9765-4E2C-B9FE-3005B26A1806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FE2F283F-9179-4769-BC47-FA7A44E44297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{367CABA9-AA7D-4DED-904B-D4ED196EF53D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{88E74142-9765-4E2C-B9FE-3005B26A1806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88E74142-9765-4E2C-B9FE-3005B26A1806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88E74142-9765-4E2C-B9FE-3005B26A1806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2F283F-9179-4769-BC47-FA7A44E44297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2F283F-9179-4769-BC47-FA7A44E44297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2F283F-9179-4769-BC47-FA7A44E44297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2F283F-9179-4769-BC47-FA7A44E44297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367CABA9-AA7D-4DED-904B-D4ED196EF53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367CABA9-AA7D-4DED-904B-D4ED196EF53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367CABA9-AA7D-4DED-904B-D4ED196EF53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367CABA9-AA7D-4DED-904B-D4ED196EF53D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
