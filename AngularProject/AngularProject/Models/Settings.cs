@@ -18,11 +18,10 @@ namespace AngularProject.Models
     }
     public class AutentificationSettings
     {
-        public bool ValidateIssuer = true;
-        public bool ValidateAudience = true;
-        public bool ValidateLifetime = true;
-        public string ValidIssuer = "https://localhost:7796";
-        public string ValidAudience = "https://localhost:7796";
-        public SymmetricSecurityKey IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@123"));
+        public bool ValidateIssuer { get; set; }
+        public bool ValidateAudience { get; set; }
+        public bool ValidateLifetime { get; set; }
+        public string ValidIssuer { get; set; }
+        public string ValidAudience { get; set; }
     }
 }

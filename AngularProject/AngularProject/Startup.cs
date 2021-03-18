@@ -24,8 +24,10 @@ namespace AngularProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var settings = new Settings();
-            Configuration.Bind(settings);
+
+            var settings = new AutentificationSettings();
+            Configuration.Bind("AutentificationSettings", settings);
+            services.AddSingleton(settings);
 
             services.AddAuthentication(opt =>
             {
@@ -35,11 +37,11 @@ namespace AngularProject
             {
                 opt.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuer = settings.AutentificationSettings.ValidateIssuer,
-                    ValidateAudience = settings.AutentificationSettings.ValidateAudience,
-                    ValidateLifetime = settings.AutentificationSettings.ValidateLifetime,
-                    ValidIssuer = settings.AutentificationSettings.ValidIssuer,
-                    ValidAudience = settings.AutentificationSettings.ValidAudience,
+                    ValidateIssuer = settings.ValidateIssuer,
+                    ValidateAudience = settings.ValidateAudience,
+                    ValidateLifetime = settings.ValidateLifetime,
+                    ValidIssuer = settings.ValidIssuer,
+                    ValidAudience = settings.ValidAudience,
                     IssuerSigningKey =  new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@123"))
             };
             });
